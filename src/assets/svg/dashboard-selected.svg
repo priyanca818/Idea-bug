@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>compass</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Common-UI-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Navbar---Expand" transform="translate(-15.000000, -184.000000)" stroke="#2193B0" stroke-width="1.5">
+            <g id="Group-4" transform="translate(0.000000, 180.000000)">
+                <g id="compass" transform="translate(16.000000, 5.000000)">
+                    <circle id="Oval" cx="10.5" cy="10.5" r="10.5"></circle>
+                    <polygon id="Path" points="14.952 6.048 12.726 12.726 6.048 14.952 8.274 8.274"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

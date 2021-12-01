@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="14px" viewBox="0 0 11 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pause</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-714.000000, -233.000000)" fill="#ACB5C2" fill-rule="nonzero">
+            <g id="pause" transform="translate(714.000000, 233.000000)">
+                <path d="M4,0.1 L1,0.1 C0.502943725,0.1 0.1,0.502943725 0.1,1 L0.1,13 C0.1,13.4970563 0.502943725,13.9 1,13.9 L4,13.9 C4.49705627,13.9 4.9,13.4970563 4.9,13 L4.9,1 C4.9,0.502943725 4.49705627,0.1 4,0.1 Z M3.1,1.9 L3.1,12.1 L1.9,12.1 L1.9,1.9 L3.1,1.9 Z" id="Rectangle"></path>
+                <path d="M10,0.1 L7,0.1 C6.50294373,0.1 6.1,0.502943725 6.1,1 L6.1,13 C6.1,13.4970563 6.50294373,13.9 7,13.9 L10,13.9 C10.4970563,13.9 10.9,13.4970563 10.9,13 L10.9,1 C10.9,0.502943725 10.4970563,0.1 10,0.1 Z M9.1,1.9 L9.1,12.1 L7.9,12.1 L7.9,1.9 L9.1,1.9 Z" id="Rectangle"></path>
+            </g>
+        </g>
+    </g>
+</svg>

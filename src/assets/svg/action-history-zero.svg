@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="172px" height="200px" viewBox="0 0 172 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="Action-Logs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Action-History---Zero-State" transform="translate(-580.000000, -181.000000)" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(580.000000, 181.000000)">
+                <circle id="Oval" fill="#4B5461" cx="85.9198286" cy="113.801102" r="85.9198286"></circle>
+                <circle id="Oval" fill="#F1F4F8" cx="85.9198286" cy="113.801102" r="78.8072612"></circle>
+                <rect id="Rectangle" fill="#0295F6" x="83.359302" y="38.9768776" width="4.5520449" height="8.53508163"></rect>
+                <rect id="Rectangle" fill="#0295F6" x="83.359302" y="180.659245" width="4.5520449" height="8.53508163"></rect>
+                <rect id="Rectangle" fill="#0295F6" transform="translate(14.794141, 114.085606) rotate(90.000000) translate(-14.794141, -114.085606) " x="12.5181184" y="109.818065" width="4.5520449" height="8.53508163"></rect>
+                <rect id="Rectangle" fill="#0295F6" transform="translate(156.476508, 114.085602) rotate(90.000000) translate(-156.476508, -114.085602) " x="154.200486" y="109.818061" width="4.5520449" height="8.53508163"></rect>
+                <polygon id="Path" fill="#0295F6" points="82.6008041 118.655278 86.4910082 109.760176 135.235906 136.75691"></polygon>
+                <rect id="Rectangle" fill="#4B5461" x="74.8242204" y="7.11256735" width="22.1912163" height="25.605249"></rect>
+                <ellipse id="Oval" fill="#4B5461" cx="85.9198286" cy="7.11256735" rx="25.605249" ry="7.11256735"></ellipse>
+                <circle id="Oval" fill="#4B5461" cx="85.6353224" cy="114.085604" r="10.5266"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

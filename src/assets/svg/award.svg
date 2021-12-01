@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="15px" viewBox="0 0 11 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>award</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="TABS" transform="translate(-453.000000, -253.000000)" stroke="#ACB5C2" stroke-width="1.2">
+            <g id="Group-3" transform="translate(454.000000, 252.000000)">
+                <g id="award" transform="translate(0.000000, 2.000000)">
+                    <ellipse id="Oval" cx="4.45454545" cy="4.13636364" rx="4.45454545" ry="4.13636364"></ellipse>
+                    <polyline id="Path" points="2.04272727 7.61681818 1.27272727 13 4.45454545 11.2272727 7.63636364 13 6.86636364 7.61090909"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="10px" viewBox="0 0 8 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>play</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-152.000000, -359.000000)" fill="#4B5461" fill-rule="nonzero">
+            <g id="play" transform="translate(153.000000, 360.000000)">
+                <path d="M-0.6,0 L-0.6,8 C-0.6,8.47469948 -0.0748524268,8.76140443 0.324454555,8.50470709 L6.54667678,4.50470709 C6.9140707,4.26852528 6.9140707,3.73147472 6.54667678,3.49529291 L0.324454555,-0.504707085 C-0.0748524268,-0.761404431 -0.6,-0.474699476 -0.6,0 Z M0.6,1.098 L5.112,4 L0.6,6.901 L0.6,1.098 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

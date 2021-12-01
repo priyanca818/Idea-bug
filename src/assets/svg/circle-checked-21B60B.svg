@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>check-circle-checked</title>
+    <g id="Products" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Individual-Product-Page---Content-Score" transform="translate(-574.000000, -196.000000)">
+            <g id="check-circle-checked" transform="translate(575.000000, 197.000000)">
+                <g>
+                    <circle id="Oval-Copy" stroke="#21B60B" fill="#21B60B" cx="8" cy="8" r="8"></circle>
+                    <g id="check" transform="translate(4.000000, 5.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.06666667">
+                        <polyline id="Path" points="8.46280992 0 2.6446281 5.81818182 0 3.17355372"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>package</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="navbar-/-products" transform="translate(-16.000000, -244.000000)" stroke="#2193B0" stroke-width="1.5">
+            <g id="package" transform="translate(17.500000, 245.000000)">
+                <line x1="12.8571429" y1="7.04761905" x2="4.28571429" y2="2.1047619" id="Path"></line>
+                <path d="M17.1428571,13.3333333 L17.1428571,5.71428571 C17.1421599,5.03447773 16.7792077,4.40657048 16.1904762,4.06666667 L9.52380952,0.257142857 C8.93447414,-0.0831100856 8.208383,-0.0831100856 7.61904762,0.257142857 L0.952380952,4.06666667 C0.363649448,4.40657048 0.000697284515,5.03447773 0,5.71428571 L0,13.3333333 C0.000697284515,14.0131413 0.363649448,14.6410486 0.952380952,14.9809524 L7.61904762,18.7904762 C8.208383,19.1307291 8.93447414,19.1307291 9.52380952,18.7904762 L16.1904762,14.9809524 C16.7792077,14.6410486 17.1421599,14.0131413 17.1428571,13.3333333 Z" id="Path"></path>
+                <polyline id="Path" points="0.257142857 4.72380952 8.57142857 9.53333333 16.8857143 4.72380952"></polyline>
+                <line x1="8.57142857" y1="19.1238095" x2="8.57142857" y2="9.52380952" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>

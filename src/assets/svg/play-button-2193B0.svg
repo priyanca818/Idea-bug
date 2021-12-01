@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="14px" viewBox="0 0 11 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-112.000000, -145.000000)" fill="#2690B0" fill-rule="nonzero">
+            <g id="play" transform="translate(113.000000, 146.000000)">
+                <path d="M-0.5625,0 L-0.5625,12 C-0.5625,12.4450308 -0.0701741501,12.7138167 0.304176145,12.4731629 L9.63750948,6.47316289 C9.98194128,6.25174245 9.98194128,5.74825755 9.63750948,5.52683711 L0.304176145,-0.473162892 C-0.0701741501,-0.713816654 -0.5625,-0.445030759 -0.5625,0 Z M0.562,1.03 L8.292,6 L0.562,10.969 L0.562,1.03 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
