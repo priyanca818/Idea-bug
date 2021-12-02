@@ -45,7 +45,7 @@ export interface SelectProps {
   selectStyles?: React.CSSProperties;
   lockTooltipContent?: React.ReactText;
   wrapperStyles?: React.CSSProperties;
-/*   tooltipProps?: ITooltipProps; */
+  /*   tooltipProps?: ITooltipProps; */
   showTooltipOnLock?: boolean;
 }
 
@@ -81,8 +81,8 @@ const Select: React.FC<SelectProps> = ({
   overflow = 'hidden',
   iconColor = 'grey',
   iconWrapperStyle = {},
-  mainIconWidth='18px',
-  mainIconHeight='18px',
+  mainIconWidth = '18px',
+  mainIconHeight = '18px',
   mainIconWrapperStyle,
   backgroundColor,
   id = '',
@@ -91,45 +91,45 @@ const Select: React.FC<SelectProps> = ({
   zIndex = 3,
   wrapperStyles,
   lockTooltipContent,
-  showTooltipOnLock=true,
-/*   tooltipProps = {
-    content: (
-      <>
-        {!!lockTooltipContent
-          ? lockTooltipContent
-          : 'Please upgrade to a higher plan.'}
-        <br />
-        <Button
-          theme={themes.text}
-          text='UPGRADE'
-          onClick={() => history.push('/subscription/plans')}
-          styles={{ marginTop: '6px' }}
-        />
-      </>
-    ),
-    maxWidth: '210px',
-    height: 72,
-    arrowDirection: 'bottom',
-    arrowPositionX: 'calc(100% - 35px)',
-    arrowPositionY: '10px',
-    containerPositionX: 'calc(100% - 200px)',
-    containerPositionY: '20px',
-    contentStyles: {
-      color: '#FFFFFF',
-      fontFamily: 'Nunito',
-      fontSize: '13px',
-      letterSpacing: '0.1px',
-      lineHeight: '18px',
-      fontWeight: 100,
-      textAlign: 'initial',
-      zIndex: 5,
-    },
-    style: {
-      marginLeft: 'auto',
-    },
-  }, */
+  showTooltipOnLock = true,
+  /*   tooltipProps = {
+      content: (
+        <>
+          {!!lockTooltipContent
+            ? lockTooltipContent
+            : 'Please upgrade to a higher plan.'}
+          <br />
+          <Button
+            theme={themes.text}
+            text='UPGRADE'
+            onClick={() => history.push('/subscription/plans')}
+            styles={{ marginTop: '6px' }}
+          />
+        </>
+      ),
+      maxWidth: '210px',
+      height: 72,
+      arrowDirection: 'bottom',
+      arrowPositionX: 'calc(100% - 35px)',
+      arrowPositionY: '10px',
+      containerPositionX: 'calc(100% - 200px)',
+      containerPositionY: '20px',
+      contentStyles: {
+        color: '#FFFFFF',
+        fontFamily: 'Nunito',
+        fontSize: '13px',
+        letterSpacing: '0.1px',
+        lineHeight: '18px',
+        fontWeight: 100,
+        textAlign: 'initial',
+        zIndex: 5,
+      },
+      style: {
+        marginLeft: 'auto',
+      },
+    }, */
 }) => {
-/*   const history = useHistory(); */
+  /*   const history = useHistory(); */
   const [dropdownShow, setDropdownShow] = useState(false);
   const [autocompleteValue, setAutocompleteValue] = useState('');
   const [currentOption, setCurrentOption] = useState<string | number | null>(
@@ -300,13 +300,15 @@ const Select: React.FC<SelectProps> = ({
       ? placeholder
       : options.find((option) => option.value === value)?.title;
     const optionIcon = !isPlaceholder &&
-    options.find((option) => option.value === value)?.icon;
+      options.find((option) => option.value === value)?.icon;
 
     const iconNode = icon && (
       <MainIconWrapper>
-        <img src={icon} style={{...mainIconWrapperStyle,
-          color:'black',
-          width:mainIconWidth, height:mainIconHeight}}  alt='alt'/>
+        <img src={icon} style={{
+          ...mainIconWrapperStyle,
+          color: 'black',
+          width: mainIconWidth, height: mainIconHeight
+        }} alt='alt' />
       </MainIconWrapper>
     );
 
@@ -407,31 +409,31 @@ const Select: React.FC<SelectProps> = ({
               {!!option.icon && option.icon}
               {option.title}
               {option.accessible === false ?
-              !!showTooltipOnLock ? (
-                
+                !!showTooltipOnLock ? (
 
-                <div/>
 
-              ) : (<IconWrapper>
-                <div
-                  style={{
-                    height: '20px', width: '20px',
-                    borderRadius: '19.24px',    
-                    backgroundColor: '#EF476F',
-                    display: 'flex', cursor: 'not-allowed',
-                    justifyContent: 'center', alignItems: 'center',
-                  }}>
-                  <img src={WhiteLock}
-                  style={{ width: '12px', height: '12px' }}  alt='alt'/>
-                </div>
-              </IconWrapper>)
-              : (
-                value === option.value && (
-                  <IconWrapper>
-                    <TickIcon />
-                  </IconWrapper>
-                )
-              )}
+                  <div />
+
+                ) : (<IconWrapper>
+                  <div
+                    style={{
+                      height: '20px', width: '20px',
+                      borderRadius: '19.24px',
+                      backgroundColor: '#EF476F',
+                      display: 'flex', cursor: 'not-allowed',
+                      justifyContent: 'center', alignItems: 'center',
+                    }}>
+                    <img src={WhiteLock}
+                      style={{ width: '12px', height: '12px' }} alt='alt' />
+                  </div>
+                </IconWrapper>)
+                : (
+                  value === option.value && (
+                    <IconWrapper>
+                      <TickIcon />
+                    </IconWrapper>
+                  )
+                )}
             </SelectDropdownItem>
           ))}
           {!filteredOptions.length && <NoOptions>No options</NoOptions>}
@@ -465,13 +467,14 @@ const SelectField = styled.div<SelectFieldProps>`
   border: 1px solid ${vars.colors.grey4}; */
   background-color: ${({ backgroundColor }) => backgroundColor ?? '#FFFFFF'};
   outline: none;
-  color: ${vars.colors.grey1};
+  color: rgb(34, 34, 34);
   font-size: 12px;
   display: flex;
   align-items: center;
   position: relative;
   cursor: pointer;
   user-select: none;
+  font-family:  "Open Sans", sans-serif;
 
   ${({ padding }) =>
     padding &&
@@ -543,7 +546,7 @@ const CurrentValue = styled.div<{ overflow: string; isPlaceholder: boolean }>`
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 50%;
-  color: ${vars.colors.grey1};
+  color: rgb(34, 34, 34);
 
   ${({ overflow }) =>
     overflow &&
@@ -591,10 +594,10 @@ const SelectDropdown = styled.div<{
   z-index: 3;
   top: calc(
     ${({ fieldHeight, calendar }) =>
-      `${fieldHeight} + ${!calendar ? '4px' : '0px'}`}
+    `${fieldHeight} + ${!calendar ? '4px' : '0px'}`}
   );
   padding: 0;
-  width: ${({width}) => width ? width : '100%'};
+  width: ${({ width }) => width ? width : '100%'};
   border-radius: 7px;
   box-shadow: 0 2px 6px ${vars.colors.grey4};
   background-color: #ffffff;
@@ -648,8 +651,8 @@ const SelectDropdownItem = styled.div<{
   padding: 0 15px;
   cursor: pointer;
   background-color: #ffffff;
-  color: ${vars.colors.grey1};
-  font-size: 12px;
+  color: rgb(34, 34, 34);
+  font-size: 13px;
   font-weight: 400;
   position: relative;
   display: flex;
@@ -710,6 +713,7 @@ const NoOptions = styled.div`
   color: ${vars.colors.grey3};
   font-size: 12px;
   font-weight: 400;
+  font-family: "Open Sans", sans-serif;
 `;
 
 const MainIconWrapper = styled.div`

@@ -20,7 +20,7 @@ export const Heading: FC<HeadingProps> = ({
   heading,
   padding,
   subheading,
-  headingFontSize = 16,
+  headingFontSize = 20,
   styles,
   headingStyles,
 }) => {
@@ -52,6 +52,7 @@ const H = styled.div<{ headingFontSize: number }>`
   font-weight: 600;
   line-height: 22px;
   letter-spacing: -0.2px;
+  margin-bottom: 10px;
 `;
 
 const Subheading = styled.div`
@@ -94,3 +95,16 @@ const Container = styled.div<{ padding?: string }>`
   /* align-items: center; */
   justify-content: space-between;
 `;
+
+
+export const Heading_Basic = () => {
+  const props: HeadingProps = {
+    heading: 'Submit Feedback',
+    subheading: '',
+  };
+  return (
+    <Container>
+      <Heading {...props} />
+    </Container>
+  );
+};

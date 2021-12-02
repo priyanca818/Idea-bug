@@ -1,12 +1,9 @@
 
-
-
 import styled from "styled-components";
-import Heading from "./Heading"
+import Chart from "../components/Chart";
 
 export const TableContainer = styled.div<ITableContainerProps>`
 
- background-color: red;
 `
 
 export interface ITableContainerProps {
@@ -18,9 +15,11 @@ export interface ITableContainerProps {
 const Table : React.FC<ITableContainerProps> = (props) => {
 
     return (
+   
         <TableContainer{...props} >
-<Heading>Ideas and Bugs</Heading>
+        <Chart></Chart>
         </TableContainer>
+  
     )
 };
 

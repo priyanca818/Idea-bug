@@ -43,8 +43,8 @@ const CommonButton = styled.button<{
   focus?: boolean;
   backgroundColor: string;
 }>`
-  font-family: 'Open Sans';
-  font-size: 11px;
+/*   font-family: 'Open Sans'; */
+  font-size: 12px;
   font-weight: bold;
   letter-spacing: -0.1px;
   line-height: 15px;
@@ -53,6 +53,7 @@ const CommonButton = styled.button<{
   width: 110px;
   border: none;
   border-radius: 7px;
+  margin-top:10px;
 
   &:hover {
     cursor: pointer;
