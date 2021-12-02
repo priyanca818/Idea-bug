@@ -36,37 +36,174 @@ export const paymentHeaderData = [
     {
       id: 1,
       createdOn: '30th June 2018',
-      description: 'PRO',
-      type: 'sarang@demandhelm.com',
-      page: 'ending 9999',
-      submittedBy: 'Annually',
+      description: 'Something random',
+      type: 'IDEA',
+      page: '/Google',
+      submittedBy: 'Priyanka',
   
     },
     {
       id: 2,
       createdOn: '1st September 2018',
-      description: 'BASIC',
-      type: 'sarang@demandhelm.com',
-      page: 'ending 9999',
-      submittedBy: 'Annually',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
   
     },
     {
       id: 3,
-      createdOn: '1st July 2018',
-      description: 'BASIC',
-      type: 'sarang@demandhelm.com',
-      page: 'ending 9999',
-      submittedBy: 'Monthly',
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
   
     },
     {
       id: 4,
-      createdOn: '1st June 2018',
-      description: 'BASIC',
-      type: 'sarang@demandhelm.com',
-      page: 'ending 9999',
-      submittedBy: 'Monthly',
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
   
     },
+
+    {
+      id: 5,
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
+  
+    },
+
+    {
+      id: 6,
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
+  
+    },
+
+    {
+      id: 7,
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
+  
+    },
+
+    {
+      id: 8,
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
+  
+    },
+
+    {
+      id: 9,
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
+  
+    },
+    
+    {
+      id: 9,
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
+  
+    },
+    
+    {
+      id: 9,
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
+  
+    },
+    
+    {
+      id: 9,
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
+  
+    },
+    
+    {
+      id: 9,
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
+  
+    },
+    
+    {
+      id: 9,
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
+  
+    },
+    
+    {
+      id: 9,
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
+  
+    },
+    
+    {
+      id: 9,
+      createdOn: '1st September 2018',
+      description: 'Issue with scrollbar',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'Pranita',
+  
+  
+    },
+    
   ];
+
+ 

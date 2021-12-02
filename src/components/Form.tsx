@@ -2,18 +2,19 @@
 import styled from 'styled-components'
 import Select from "../components/Select"
 import Button from './Buttons';
-import  {Heading_Basic} from './Heading';
+import  {Heading} from './Heading';
 import {useState} from 'react'
 
 export const FormContainer = styled.div<IFormProps>`
 
-text-align:center;
+
 width:25%;
 display:block;
 background-color: white;
 padding:20px 20px 20px 20px;
 box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
 margin-bottom: 50px;
+margin-left:60%;
 
 textarea{
     font-family:"Open Sans", sans-serif;
@@ -57,7 +58,9 @@ const Form: React.FC<IFormProps> = (props) => {
 
     return (
         <FormContainer{...props} >
-    <Heading_Basic/>
+        <Heading 
+        
+  heading='Submit Feedback'/>
   
 
         <Select

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import customTooltip from "../CustomTooltip"
 export type CustomLSBTooltipProps = {
   left: string;
   top: string;
@@ -18,7 +18,8 @@ export type CustomLSBTooltipProps = {
 };
 
 export type CustomTooltipGeneratorLSB = {
-  tooltip: React.FC<CustomLSBTooltipProps>;
+  tooltip: React.FC<CustomLSBTooltipProps> | typeof customTooltip;
+  //typeof is added
   height: number;
   labels: string[];
   entities: {};

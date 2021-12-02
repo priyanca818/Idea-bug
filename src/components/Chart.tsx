@@ -1,6 +1,5 @@
 import React from 'react';
-import { BarChart, Bar, XAxis, YAxis,
-    CartesianGrid } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import styled from 'styled-components';
 
 
@@ -8,10 +7,6 @@ import styled from 'styled-components';
 
     
     export const ChartContainer = styled.div<IChartContainer>`
-Bar:hover{
-    
-
-}
 
     `
 
@@ -25,41 +20,57 @@ Bar:hover{
     const Chart: React.FC<IChartContainer> = (props) => {
     
         const data = [
-            { name: 'A', x: 12, y: 23, z: 122 },
-            { name: 'B', x: 22, y: 3, z: 73 },
-            { name: 'C', x: 13, y: 15, z: 32 },
-            { name: 'D', x: 44, y: 35, z: 23 },
-            { name: 'E', x: 35, y: 45, z: 20 },
-            { name: 'F', x: 62, y: 25, z: 29 },
-            { name: 'G', x: 37, y: 17, z: 61 },
-            { name: 'H', x: 28, y: 32, z: 45 },
-            { name: 'I', x: 19, y: 43, z: 93 },
+            { name: '1', idea: 12, bug: 23, z: 122 },
+            { name: '2', idea: 22, bug: 3, z: 73 },
+            { name: '3', idea: 13, bug: 15, z: 32 },
+            { name: '4', idea: 44, bug: 35, z: 23 },
+            { name: '5', idea: 35, bug: 45, z: 20 },
+            { name: '6', idea: 62, bug: 25, z: 29 },
+            { name: '7', idea: 37, bug: 17, z: 61 },
+            { name: '8', idea: 28, bug: 32, z: 45 },
+            { name: '9', idea: 19, bug: 43, z: 93 },
+            { name: '10', idea: 12, bug: 23, z: 122 },
+            { name: '11', idea: 22, bug: 3, z: 73 },
+            { name: '12', idea: 13, bug: 15, z: 32 },
+            { name: '13', idea: 44, bug: 35, z: 23 },
+            { name: '14', idea: 35, bug: 45, z: 20 },
+            { name: '15', idea: 62, bug: 25, z: 29 },
+            { name: '16', idea: 37, bug: 17, z: 61 },
+            { name: '17', idea: 28, bug: 32, z: 45 },
+            { name: '18', idea: 19, bug: 43, z: 93 },
+            { name: '19', idea: 35, bug: 45, z: 20 },
+            { name: '6', idea: 62, bug: 25, z: 29 },
+            { name: '7', idea: 37, bug: 17, z: 61 },
+            { name: '8', idea: 28, bug: 32, z: 45 },
+            { name: '9', idea: 19, bug: 43, z: 93 },
+            { name: '10', idea: 12, bug: 23, z: 122 },
+            { name: '11', idea: 22, bug: 3, z: 73 },
+            { name: '12', idea: 13, bug: 15, z: 32 },
+            { name: '13', idea: 44, bug: 35, z: 23 },
+            { name: '14', idea: 35, bug: 45, z: 20 },
+            { name: '15', idea: 62, bug: 25, z: 29 },
+            { name: '16', idea: 37, bug: 17, z: 61 },
+            { name: '17', idea: 28, bug: 32, z: 45 },
+            { name: '18', idea: 19, bug: 43, z: 93 },
+
+
+
         ];
 
     
         return (
             <ChartContainer{...props} >
-            <BarChart width={500} height={500} data={data} >
+            <BarChart width={900} height={600} data={data} barGap={0} >
             <CartesianGrid />
             <XAxis dataKey="name" />
             <YAxis />
-            <Bar dataKey="x" stackId="a" fill="rgb(52 170 247)" />
-            <Bar dataKey="y" stackId="a" fill="rgb(255 180 0)" />
+            <Bar dataKey="idea" stackId="a" fill="rgb(52 170 247)" />
+            <Bar dataKey="bug" stackId="a" fill="rgb(255 180 0)" />
         </BarChart>
             </ChartContainer>
         )
     };
     
-
-    
-    
-
-
-
-
-
-
-
 
 
 

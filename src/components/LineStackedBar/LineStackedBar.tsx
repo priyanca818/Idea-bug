@@ -1,10 +1,10 @@
-import Chart, { ChartConfiguration } from 'chart.js';
+import  { ChartConfiguration, Chart } from 'chart.js';
 import moment from 'moment';
 import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 
 import vars from '../../styles/vars';
-import {customTooltipGeneratorLSB} from './CustomTooltipGenerator/CustomTooltipGenerator';
+import defaultCustomTooltip from './CustomTooltip';
 import {
   LegendLabel,
   LegendsContainer,
@@ -14,6 +14,7 @@ import {
 
 import {
   CustomLSBTooltipProps,
+  customTooltipGeneratorLSB,
 } from './CustomTooltipGenerator/CustomTooltipGenerator';
 
 export type LineStackedBarChartDataset = {
@@ -32,7 +33,7 @@ export type LineStackedBarChartDataset = {
   borderWidth?:
     | Chart.BorderWidth
     | Chart.BorderWidth[]
-    | Chart.Scriptable<Chart.BorderWidth, "">
+    | Chart.Scriptable<Chart.BorderWidth>
     | undefined;
 };
 
@@ -205,8 +206,7 @@ export const LineStackedBar: FC<LineStackedBarProps> = ({
   height = 430,
 
   customTooltipData,
-/*   customTooltip = defaultCustomTooltip, */
-customTooltip = customTooltipGeneratorLSB,
+  customTooltip = defaultCustomTooltip,
   datasets: dataS,
 
   calculateLineMin,
@@ -227,7 +227,7 @@ customTooltip = customTooltipGeneratorLSB,
   const canvasRef = useRef<HTMLCanvasElement>(null);
   // const barThicknessRef = useRef(10);
 
-  const [datasets, setDatasets] = useState<Chart.ChartDataset[]>();
+  const [datasets, setDatasets] = useState<Chart.ChartDataSets[]>();
   const [hideLabel, setHideLabel] = useState({});
   const days = useRef('');
   const createDatasets = useCallback(
@@ -235,8 +235,9 @@ customTooltip = customTooltipGeneratorLSB,
       datasets: LineStackedBarChartDataset[],
       // barThickness: number
     ) => {
-      const ds: Chart.ChartDataset[] = datasets.map(
+      const ds: Chart.ChartDataSets[] = datasets.map(
         ({
+          
           type,
           color,
           data,
@@ -286,11 +287,11 @@ customTooltip = customTooltipGeneratorLSB,
             return {
               data,
               type,
-              barThickness,
+             /*  barThickness, */
               order,
-              label: isIdeabug
+              /* label: isIdeabug
                 ? `${description?.join('`~`')} ^&% ${page?.join('`~`')}`
-                : title, // This is for Idea & Bug bar chart tooltip.
+                : title, */ // This is for Idea & Bug bar chart tooltip.
               backgroundColor: color,
               hoverBackgroundColor: hoverColor,
               yAxisID,
@@ -630,6 +631,25 @@ customTooltip = customTooltipGeneratorLSB,
 
     return config;
   }, [
+    chartId,
+    isIdeabug,
+    maxTicksLimitYLeft, 
+    maxTicksLimitYRight,
+     showLabels,
+     showXAxis,
+     stacked,
+     tooltipProps, 
+    x1Ticks, 
+    x2Ticks,
+    x3Ticks,
+     yLeftLabelPadding, 
+    yRightLabelPadding,
+//these all added
+
+
+
+
+    
     dataS,
     labels,
     height,
@@ -676,7 +696,7 @@ customTooltip = customTooltipGeneratorLSB,
     return () => {
       chart.current?.destroy();
     };
-  }, []);
+  }, [createConfig]);
 
   useEffect(() => {
     // barThicknessRef.current = getBarThickness(width, labels.length);
@@ -715,8 +735,8 @@ customTooltip = customTooltipGeneratorLSB,
       chart.current.update();
       chart.current.data.datasets && setDatasets(chart.current.data.datasets);
     }
-  }, [dataS, labels, entities, yLeftLabel, yRightLabel, width, createDatasets]);
-
+  }, [dataS, labels, entities, yLeftLabel, yRightLabel, width, createDatasets, height, chartId, customTooltip, customTooltipData]);
+//added last 4
   const legendClickCallback = useCallback(
     (e: React.MouseEvent<HTMLElement>, index: number) => {
       if (chart.current) {

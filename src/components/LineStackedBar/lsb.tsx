@@ -1,14 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { kpiEntities, kpiIds } from '../chartData';
+import { kpiEntities, kpiIds } from './chartData';
 
-import LineStackedBar, { LineStackedBarProps } from './';
+import LineStackedBar, { LineStackedBarProps } from './LineStackedBar';
 
-export default {
-  title: 'UI|TestCharts',
-  component: LineStackedBar,
-};
 
 export const LineStackedBarSmall = () => {
   const props: LineStackedBarProps = {
