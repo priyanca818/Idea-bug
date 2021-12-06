@@ -7,7 +7,7 @@ import {useState} from 'react'
 
 export const FormContainer = styled.div<IFormProps>`
 
-
+border-radius: 7px;
 width:25%;
 display:block;
 background-color: white;
@@ -15,6 +15,7 @@ padding:20px 20px 20px 20px;
 box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
 margin-bottom: 50px;
 margin-left:60%;
+margin-top:70px;
 
 textarea{
     font-family:"Open Sans", sans-serif;

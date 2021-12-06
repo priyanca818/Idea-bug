@@ -54,20 +54,20 @@ export const paymentHeaderData = [
     {
       id: 3,
       createdOn: '1st September 2018',
-      description: 'Issue with scrollbar',
-      type: 'BUG',
-      page: '/Neiron',
-      submittedBy: 'Pranita',
+      description: 'Random Idea',
+      type: 'IDEA',
+      page: '/DH',
+      submittedBy: 'Kalpesh',
   
   
     },
     {
       id: 4,
       createdOn: '1st September 2018',
-      description: 'Issue with scrollbar',
+      description: 'Random bug',
       type: 'BUG',
-      page: '/Neiron',
-      submittedBy: 'Pranita',
+      page: '/Chewy',
+      submittedBy: 'Shubham',
   
   
     },
@@ -75,10 +75,10 @@ export const paymentHeaderData = [
     {
       id: 5,
       createdOn: '1st September 2018',
-      description: 'Issue with scrollbar',
-      type: 'BUG',
-      page: '/Neiron',
-      submittedBy: 'Pranita',
+      description: 'change meeting time',
+      type: 'IDEA',
+      page: '/Bts',
+      submittedBy: 'Rishikesh',
   
   
     },
@@ -86,10 +86,100 @@ export const paymentHeaderData = [
     {
       id: 6,
       createdOn: '1st September 2018',
-      description: 'Issue with scrollbar',
+      description: 'Issue with feedbackpage',
       type: 'BUG',
       page: '/Neiron',
-      submittedBy: 'Pranita',
+      submittedBy: 'someone',
+  
+  
+    },
+    {
+      id: 6,
+      createdOn: '1st September 2018',
+      description: 'Issue with feedbackpage',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'someone',
+  
+  
+    },
+    {
+      id: 6,
+      createdOn: '1st September 2018',
+      description: 'Issue with feedbackpage',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'someone',
+  
+  
+    },
+    {
+      id: 6,
+      createdOn: '1st September 2018',
+      description: 'Issue with feedbackpage',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'someone',
+  
+  
+    },
+    {
+      id: 6,
+      createdOn: '1st September 2018',
+      description: 'Issue with feedbackpage',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'someone',
+  
+  
+    },
+    {
+      id: 6,
+      createdOn: '1st September 2018',
+      description: 'Issue with feedbackpage',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'someone',
+  
+  
+    },
+    {
+      id: 6,
+      createdOn: '1st September 2018',
+      description: 'Issue with feedbackpage',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'someone',
+  
+  
+    },
+    {
+      id: 6,
+      createdOn: '1st September 2018',
+      description: 'Issue with feedbackpage',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'someone',
+  
+  
+    },
+    {
+      id: 6,
+      createdOn: '1st September 2018',
+      description: 'Issue with feedbackpage',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'someone',
+  
+  
+    },
+    {
+      id: 6,
+      createdOn: '1st September 2018',
+      description: 'Issue with feedbackpage',
+      type: 'BUG',
+      page: '/Neiron',
+      submittedBy: 'someone',
   
   
     },

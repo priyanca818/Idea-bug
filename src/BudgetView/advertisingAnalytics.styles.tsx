@@ -5,7 +5,7 @@ import { DivMixin, DivProps } from '../components/Div';
 export const Container = styled.div`
   margin: 25px 0 0 0;
   padding: 15px;
-width:88%;
+width:90%;
   border-radius: 7px;
   background-color: #ffffff;
   box-shadow:0 3px 10px rgb(0 0 0 / 0.2);

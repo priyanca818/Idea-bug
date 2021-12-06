@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import vars from '../styles/vars';
-import Button, { themes } from '../../src/components/Buttons';
-import Spinner from '../components/Spinner';
+import vars from '../../styles/vars';
+import Button, { themes } from '../../../src/components/Buttons';
+import Spinner from '../../components/Spinner';
 
 interface ISecTableProps {
   type?: string;
