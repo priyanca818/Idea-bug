@@ -56,7 +56,7 @@ const Table = styled.table<ISecTableProps>`
     padding-bottom: 35px;
     border: solid #dae0e9;
     border-width: ${({ type }) =>
-      type === 'plain' || type === 'doubleColumn' ? '0 0 0.5px 0' : '0.5px 0'};
+    type === 'plain' || type === 'doubleColumn' ? '0 0 0.5px 0' : '0.5px 0'};
   }
   tr {
     display: flex;
@@ -95,7 +95,7 @@ const Table = styled.table<ISecTableProps>`
   }
   td:nth-child(1) {
     border-left: ${({ type }) =>
-      type === 'doubleColumn' ? '0.5px solid #dae0e9' : '0'};
+    type === 'doubleColumn' ? '0.5px solid #dae0e9' : '0'};
   }
   .list {
     cursor: pointer;
@@ -136,8 +136,7 @@ const PlainTableWrapper = styled.div<ISecTableProps>`
 const TitleTableWrapper = styled.div<ISecTableProps>`
   border-radius: 7px;
   background-color: #ffffff;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  margin-left:5%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);  
   margin-bottom:50px;
 
   .title {
@@ -153,7 +152,7 @@ const TitleTableWrapper = styled.div<ISecTableProps>`
   }
 `;
 
-const SubtitleTableWrapper = styled(TitleTableWrapper)<ISecTableProps>`
+const SubtitleTableWrapper = styled(TitleTableWrapper) <ISecTableProps>`
   .title {
     padding-left: 15px;
     padding-top: 14px;
@@ -173,7 +172,7 @@ const SubtitleTableWrapper = styled(TitleTableWrapper)<ISecTableProps>`
   }
 `;
 
-const ButtonTableWrapper = styled(TitleTableWrapper)<ISecTableProps>`
+const ButtonTableWrapper = styled(TitleTableWrapper) <ISecTableProps>`
   .button {
     float: right;
     display: block;
@@ -297,8 +296,8 @@ const SecondaryTable: React.FC<ISecTableProps> = ({
                         cell.clickable
                           ? 'list'
                           : cell.isLinkRed
-                          ? 'list-red'
-                          : ''
+                            ? 'list-red'
+                            : ''
                       }
                     >
                       {cell.clickableWithLink ? (
@@ -327,7 +326,7 @@ const SecondaryTable: React.FC<ISecTableProps> = ({
 SecondaryTable.defaultProps = {
   tableType: 'plain',
   title: '',
-  onClick: () => {},
+  onClick: () => { },
 };
 
 export default SecondaryTable;

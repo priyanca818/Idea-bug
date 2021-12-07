@@ -1,71 +1,73 @@
+import styled from "styled-components";
+import Header from "../src/components/Header";
+import { Type2 } from "../src/components/SecondaryTable/SecondaryTable2";
+import { Div } from "./components/Div";
+export interface IFeedbackContainer { }
 
-import Form from '../src/components/Form';
-import SecondaryTable from './components/SecondaryTable';
-import { paymentHeaderData, paymentRowData } from "../src/components/TableData"
-import Chart2 from "../src/components/Chart2"
-import { Container } from './BudgetView/advertisingAnalytics.styles';
-import styled from 'styled-components';
-import Header from '../src/components/Header'
-import {The1440Window, PageWindow} from './pages.styles'
-import {Type2} from "../src/components/SecondaryTable/SecondaryTable2"
-import Modal from './components/Modal';
-
-
-
-
-
-export const FeedbackContainer = styled.div<IFeedbackContainer>`
-    body{
-      background-color: #f0f3f7;
-    }
-
-width:100%;
-height:150%;
-background-color: #f0f3f7;
-    `
-
-export interface IFeedbackContainer {
-
-
-}
-
-const Feedback: React.FC<IFeedbackContainer> = (props) => {
-
-
-
-
+const Feedback = (props) => {
   return (
     <>
- <PageWindow>
-      <FeedbackContainer>
-      <The1440Window>
-        <Header />
-        <Form />
-        <Container>
-
-          <Chart2 />
-        </Container>
-
-<Type2/>
-
-{/*         <SecondaryTable
-          headerData={paymentHeaderData}
-          rowData={paymentRowData}
-          tableType='title'
-          title='Idea and Bugs'
-          wrapperStyles={{ width: '95%', height: '550px', }}
-        /> */}
-
-
-<Modal display="none"></Modal>
-           </The1440Window>
-      </FeedbackContainer>
-      </PageWindow>
+      <Header />
+      <Div mx="auto" width="80%" mt="80px">
+        <BasicCard my="20px" height="650px" width="100%">
+          {/* <Chart2 /> */}
+        </BasicCard>
+        <Type2 />
+      </Div>
     </>
   );
+
+  // <PageWindow>
+  //   <The1440Window>
+  //   </The1440Window>
+  // </PageWindow>
+
+  // return (
+  //   <>
+  //     <PageWindow>
+  //       <FeedbackContainer>
+  //         <The1440Window>
+  //           <Header >
+  //           </Header>
+  //           <Container>
+
+  //             <Chart2 />
+  //           </Container>
+
+  //           <Type2 />
+
+  //           {/*         <SecondaryTable
+  //           headerData={paymentHeaderData}
+  //           rowData={paymentRowData}
+  //           tableType='title'
+  //           title='Idea and Bugs'
+  //           wrapperStyles={{ width: '95%', height: '550px', }}
+  //         /> */}
+
+  //         </The1440Window>
+  //       </FeedbackContainer>
+  //     </PageWindow>
+  //   </>
+  // );
 };
 
+const BasicCard = styled(Div)`
+  background: #ffffff;
+  box-shadow: 0px 1px 6px #dae0e9;
+  border-radius: 7px;
+`;
 
+// type TetDivProps = {
+//   height: number;
+//   width: number;
+// };
 
+// const TestDiv = styled.div<TetDivProps>`
+
+// background-color: red;
+
+// width:${({ width }) => width}px;
+// height:${({ height }) => height}px;
+// `;
 
 export default Feedback;

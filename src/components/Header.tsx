@@ -1,76 +1,80 @@
+import styled from "styled-components";
+import Form from "./Form";
+import { useState } from "react";
+import { Div } from "./Div";
+import Button, { themes } from "./Buttons";
 
-import styled from 'styled-components'
-import Heading from './Heading'
-export const HeaderContainer = styled.div<IHeaderProps>`
+export const Header = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const toggleModal = () => {
+    setIsModalVisible((isModalVisible) => !isModalVisible);
+  };
 
-position: fixed;
-    width: 100%;
-    height: 60px;
-    border-bottom: 1px solid rgb(218, 224, 233);
-    z-index: 10;
-    background: white;
-    top: 0px;
-    left: 0px;
-    color: rgb(34, 34, 34);
-    font-family: "Open Sans", sans-serif;
-    align-content: center;
-    font-weight: 600;
-
-
-
-    .pageName{
-        align-content: center;
-        margin-left: 70px;
-        margin-top: 20px;
-    }
-
-
-/*     height:40px;
-text-align: center;
-background-color: #ffffff;
-color: Blue;
-  border-width: 2px;
-  font-size: 30px;
-  box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
-  margin-top: -5px;
-  width:100%; */
-
-`
-
-
-export interface IHeaderProps {
-
-
-}
-
-
-
-export const Header: React.FC<IHeaderProps> = (props) => {
-
-
-
-    return (
-<>
-<HeaderContainer>
-    <div className='pageName'>
-<Heading 
- headingFontSize={20}
-        margin-left="83px"
-        heading='Feedback'/>
-        </div>
-</HeaderContainer>
-</>
-
-    )
+  return (
+    <HeaderContainer id="HeaderContainer" pl="30px" pr="10px">
+      <LeftDiv id="LeftDiv">
+        <HeadingText>FeedBack</HeadingText>
+      </LeftDiv>
+      <RightDiv id="RightDiv">
+        <Div position="relative">
+          <Button theme={themes.normal} text="Show" onClick={toggleModal} />
+          {isModalVisible && <Form />}
+        </Div>
+      </RightDiv>
+    </HeaderContainer>
+  );
 };
 
 export default Header;
 
+const HeadingText = styled.span`
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+`;
 
+const HeaderContainer = styled(Div)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  font-family: "Open Sans", sans-serif;
+`;
 
+const LeftDiv = styled.div``;
 
+const RightDiv = styled.div``;
 
+// export const HeaderContainer = styled.div`
+//   position: fixed;
+//   width: 100%;
+//   height: 60px;
+//   border-bottom: 1px solid rgb(218, 224, 233);
+//   background: white;
+//   color: rgb(34, 34, 34);
+//   align-content: center;
+//   font-weight: 600;
 
+//   FormFinal {
+//     margin-left: 90%;
+//     margin-top: -35px;
+//   }
 
+//   .pageName {
+//     align-content: center;
+//     margin-left: 70px;
+//     margin-top: 20px;
+//   }
 
-
+//   .shareBtn {
+//     margin-left: 90%;
+//     margin-top: -30px;
+//     display: block;
+//   }
+// `;

@@ -65,7 +65,6 @@ export const SecondaryTable__SubHeading = styled.div`
 
 export const SecondaryTable__TableWrapper = styled.div`
   /* Table Wrapper */
-  margin-right: 5%;
   padding: 0;
   height: 100%;
   overflow: auto;

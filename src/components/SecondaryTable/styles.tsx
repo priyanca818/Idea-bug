@@ -6,7 +6,6 @@ export const SecondaryTable__Container = styled.div<{
   height?: string;
   width?: string;
 }>`
-  margin-left: 5% ;
   padding: 0;
   border-radius: 7px;
   background-color: #ffffff;

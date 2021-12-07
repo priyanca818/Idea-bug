@@ -23,7 +23,7 @@ export interface IButtonProps {
   elemRef?: React.RefObject<HTMLButtonElement>;
   id?: string;
   focus?: boolean;
-  className?:string;
+  className?: string;
 }
 
 export enum themes {
@@ -53,7 +53,7 @@ const CommonButton = styled.button<{
   width: 110px;
   border: none;
   border-radius: 7px;
-  margin-top:10px;
+
 
   &:hover {
     cursor: pointer;
@@ -225,7 +225,7 @@ const TextButton = styled(CommonButton)`
   border: none;
   text-decoration: underline;
 
-  color: ${({backgroundColor}) => backgroundColor ? backgroundColor : vars.colors.primary_blue};
+  color: ${({ backgroundColor }) => backgroundColor ? backgroundColor : vars.colors.primary_blue};
 
   &:hover {
     color: #0068c3;

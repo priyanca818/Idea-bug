@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Select from '../Select';
 /* import vars from '../styles/vars';
 import Button, { themes } from './Buttons';
 import Spinner from './Spinner'; */
@@ -12,13 +12,12 @@ import {
 } from './';
 
 
-
 export const Type2 = () => {
   const groupTableProps: SecondaryTable2Options = {
     rowIds,
     rows,
     heads,
-    width: '90%',
+    width: '100%',
     height: '500px',
 
     styles: {
@@ -73,67 +72,69 @@ const heads = [
   { id: 'Type', titleData: 'Type' },
   { id: 'Page', titleData: 'Page' },
   { id: 'submittedBy', titleData: 'Submitted By' },
+
 ];
 const rows = {
   1: {
     createdOn: '11-11-11',
     description: 'this is it',
     Type: 'IDEA',
-    Page:'/blackpink',
-    submittedBy:"Priyanka",
+    Page: '/blackpink',
+    submittedBy: "Priyanka",
+    status: {}
   },
   2: {
-    CreatedOn: '11-11-11',  
+    CreatedOn: '11-11-11',
     description: 'Campaign detail page > Targeting: Unable to change bids',
     Type: 'BUG',
-    Page:'/blackpink',
-    submittedBy:"Priyanka",
+    Page: '/blackpink',
+    submittedBy: "Priyanka",
   },
   3: {
     CreatedOn: '11-11-11',
     description: 'this is it',
     Type: 'BUG',
-    Page:'/blackpink',
-    submittedBy:"Priyanka",
+    Page: '/blackpink',
+    submittedBy: "Priyanka",
   },
   4: {
     CreatedOn: '11-11-11',
     description: 'Product dimension should be renamed as Advertised Product as we already have Product Search Term which leads to confusion.',
     Type: 'IDEA',
-    Page:'/blackpink',
-    submittedBy:"Priyanka",
+    Page: '/blackpink',
+    submittedBy: "Priyanka",
   },
   5: {
     CreatedOn: '11-11-11',
     description: 'Even save a list to apply to other campaigns or ad groups. That way we can block similar terms that are junk across multiple campaigns.',
     Type: 'IDEA',
-    Page:'/blackpink',
-    submittedBy:"Priyanka",
+    Page: '/blackpink',
+    submittedBy: "Priyanka",
   },
   6: {
     CreatedOn: '11-11-11',
     description: 'this is it',
     Type: 'IDEA',
-    Page:'/blackpink',
-    submittedBy:"Priyanka",
+    Page: '/blackpink',
+    submittedBy: "Priyanka",
   },
   7: {
     CreatedOn: '11-11-11',
     description: 'this is it',
     Type: 'IDEA',
-    Page:'/blackpink',
-    submittedBy:"Priyanka",
+    Page: '/blackpink',
+    submittedBy: "Priyanka",
   },
   8: {
     CreatedOn: '11-11-11',
     description: 'this is it',
     Type: 'IDEA',
-    Page:'/blackpink',
-    submittedBy:"Priyanka",
+    Page: '/blackpink',
+    submittedBy: "Priyanka",
   },
 
 
-  
+
 
 };
 const rowIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];

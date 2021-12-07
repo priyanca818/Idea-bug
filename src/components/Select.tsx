@@ -142,10 +142,10 @@ const Select: React.FC<SelectProps> = ({
 
   useEffect(() => {
     return () => {
-      document.removeEventListener('click', onClickOutside);
-      document.removeEventListener('keydown', onKeyClick);
+      document?.removeEventListener('click', onClickOutside);
+      document?.removeEventListener('keydown', onKeyClick);
       // @ts-ignore
-      select.current.removeEventListener('wheel', onMouseScroll);
+      select.current?.removeEventListener('wheel', onMouseScroll);
     };
   }, []);
 

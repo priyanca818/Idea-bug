@@ -24,15 +24,16 @@ import {
 
 export interface DivProps
   extends GridProps,
-    SpaceProps,
-    ColorProps,
-    LayoutProps,
-    BorderProps,
-    ShadowProps,
-    FlexboxProps,
-    PositionProps,
-    TypographyProps,
-    BackgroundProps {}
+  SpaceProps,
+  ColorProps,
+  LayoutProps,
+  BorderProps,
+  ShadowProps,
+  FlexboxProps,
+  PositionProps,
+  TypographyProps,
+  BackgroundProps { }
+
 export const Div = styled.div<DivProps>(
   {
     boxSizing: 'border-box',
