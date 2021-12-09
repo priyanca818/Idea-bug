@@ -27,7 +27,7 @@ export const SecondaryTable__Header = styled.div`
   display: flex;
   border-bottom: 0.5px solid ${vars.colors.grey4};
   justify-content: space-between;
-  box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow:0px 1px 6px #dae0e9;
 `;
 
 export const SecondaryTable__HeadingWrapper = styled.div`
@@ -67,7 +67,7 @@ export const SecondaryTable__TableWrapper = styled.div`
   height: 100%;
   overflow: auto;
   box-sizing: border-box;
-  box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow:0px 1px 6px #dae0e9;
   &::-webkit-scrollbar {
     background-color: #fff;
     width: 16px;
@@ -143,7 +143,7 @@ export const SecondaryTable__Table = styled.table`
   width: 100%;
   margin: 0;
   padding: 0;
-
+  box-shadow:0px 1px 6px #dae0e9;
   border-spacing: 0;
   border-collapse: separate;
 

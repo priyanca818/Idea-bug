@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
-import React, { CSSProperties, FC, ReactNode, ReactText } from 'react';
-import  {Heading} from '../Heading'
-import Button, { themes } from '../Buttons';
-
+import React, { CSSProperties, FC, ReactNode, ReactText, useState } from 'react';
+import { Heading } from '../Heading'
+import SelectForTable from '../SelectForTable'
 import {
   SecondaryTable__Container,
   SecondaryTable__Header,
@@ -30,19 +29,9 @@ export interface SecondaryTable2Options {
   width?: string;
   height?: string;
   styles?: {
-    // * tr?: { [rowId in ReactText]: CSSProperties };
     tr?: object;
-
-    // * column?: { [colId in ReactText]: CSSProperties };
     column?: object;
-
-    // * colInRow?: {
-    // *   [rowId in ReactText]: {
-    // *     [colId in ReactText]: CSSProperties;
-    // *   };
-    // * };
     colInRow?: object;
-
     table?: CSSProperties;
     thead?: CSSProperties;
     tbody?: CSSProperties;
@@ -82,8 +71,8 @@ export const SecondaryTable2: FC<SecondaryTable2Options> = ({
           )}
         </SecondaryTable__HeadingWrapper>
         <Heading
-                heading='Ideas and Bugs'
-                subheading="Check out your submitted Ideas and Bugs" />
+          heading='Ideas and Bugs'
+          subheading="Check out your submitted Ideas and Bugs" />
       </SecondaryTable__Header>
       <SecondaryTable__TableWrapper>
         {rowIds.length ? (
@@ -108,7 +97,6 @@ export const SecondaryTable2: FC<SecondaryTable2Options> = ({
                 return (
                   <SecondaryTable__Tr key={rowId} style={rowStyle}>
                     {heads.map((head) => {
-                      // return <SecondaryTable__Td key={col.key}>{col.data}</SecondaryTable__Td>;
                       const colId = head.id;
                       const tdStyle = {
                         ...head?.css,
@@ -121,7 +109,6 @@ export const SecondaryTable2: FC<SecondaryTable2Options> = ({
                       if (head.formatData) {
                         value = head.formatData?.(value, rows?.[rowId]);
                       }
-
                       return (
                         <SecondaryTable__Td
                           key={colId}

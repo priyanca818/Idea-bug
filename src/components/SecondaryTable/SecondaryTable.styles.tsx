@@ -18,7 +18,7 @@ background-color: red;
   flex-direction: column;
   width: ${(props) => (props.width ? props.width : '100%')};
   height: ${(props) => (props.height ? props.height : '100%')}; 
-  box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow: 0px 1px 6px #dae0e9;
 `;
 
 export const SecondaryTable__Header = styled.div`
@@ -30,7 +30,7 @@ export const SecondaryTable__Header = styled.div`
   display: flex;
   border-bottom: 0.5px solid ${vars.colors.grey4};
   justify-content: space-between;
-  box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow: 0px 1px 6px #dae0e9;
 `;
 
 export const SecondaryTable__HeadingWrapper = styled.div`
@@ -40,7 +40,7 @@ export const SecondaryTable__HeadingWrapper = styled.div`
   /* padding: 14px 16px 13px 16px; */
   flex-direction: column;
   justify-content: space-between;
-  box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow: 0px 1px 6px #dae0e9;
 `;
 
 export const SecondaryTable__Heading = styled.div`

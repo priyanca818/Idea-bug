@@ -17,7 +17,7 @@ export const Header = () => {
       </LeftDiv>
       <RightDiv id="RightDiv">
         <Div position="relative">
-          <Button theme={themes.normal} text="Show" onClick={toggleModal} />
+          <Button theme={themes.normal} text="Share Idea/Bug" onClick={toggleModal} />
           {isModalVisible && <Form />}
         </Div>
       </RightDiv>
@@ -45,36 +45,10 @@ const HeaderContainer = styled(Div)`
   top: 0px;
   left: 0px;
   font-family: "Open Sans", sans-serif;
+  box-shadow:0 3px 10px rgb(0 0 0 / 0.05);
 `;
 
 const LeftDiv = styled.div``;
 
 const RightDiv = styled.div``;
 
-// export const HeaderContainer = styled.div`
-//   position: fixed;
-//   width: 100%;
-//   height: 60px;
-//   border-bottom: 1px solid rgb(218, 224, 233);
-//   background: white;
-//   color: rgb(34, 34, 34);
-//   align-content: center;
-//   font-weight: 600;
-
-//   FormFinal {
-//     margin-left: 90%;
-//     margin-top: -35px;
-//   }
-
-//   .pageName {
-//     align-content: center;
-//     margin-left: 70px;
-//     margin-top: 20px;
-//   }
-
-//   .shareBtn {
-//     margin-left: 90%;
-//     margin-top: -30px;
-//     display: block;
-//   }
-// `;

@@ -1,9 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import TickWhite from '../../../assets/svg/tick-white.svg';
-import WhiteDash from '../../../assets/svg/horizontal-dash-FFFFFF.svg';
 import vars from '../styles/vars';
-import WhiteLock from '../../../assets/svg/lock-FFFFFF.svg';
 import Tooltip, { ITooltipProps } from './Tooltip';
 import Button, { themes } from './Buttons';
 import { useHistory } from 'react-router-dom';
@@ -119,10 +116,12 @@ const CheckboxCopy: React.FC<ICheckboxProps> = (props) => {
   const history = useHistory();
   const tooltipProps: ITooltipProps = {
     content: (
-      <div style={{padding: '5px 0',color: '#FFFFFF',
-      fontFamily: 'Nunito', fontSize: '13px',
-      letterSpacing: '0.1px', lineHeight: '18px',
-      fontWeight: 100, textAlign: 'justify',}}>
+      <div style={{
+        padding: '5px 0', color: '#FFFFFF',
+        fontFamily: 'Nunito', fontSize: '13px',
+        letterSpacing: '0.1px', lineHeight: '18px',
+        fontWeight: 100, textAlign: 'justify',
+      }}>
         {!!props.lockTooltipContent ? props.lockTooltipContent : 'Please upgrade to a higher plan.'}
         <br />
         <Button
@@ -139,7 +138,7 @@ const CheckboxCopy: React.FC<ICheckboxProps> = (props) => {
     arrowPositionY: '10px',
     containerPositionX: 'calc(100% - 53px)',
     containerPositionY: '30px',
-    contentStyles: {zIndex: 5},
+    contentStyles: { zIndex: 5 },
   };
   let checkboxElem;
   checkboxElem = (
@@ -160,9 +159,9 @@ const CheckboxCopy: React.FC<ICheckboxProps> = (props) => {
             cursor: 'not-allowed',
             marginLeft: '-40px',
           }}>
-            <img src={WhiteLock}
+            <img src=""
               style={{ width: '12px', height: '12px' }}
-            />
+              alt='na' />
           </div>
         </Tooltip>
         :
@@ -187,8 +186,8 @@ const CheckboxCopy: React.FC<ICheckboxProps> = (props) => {
               }}>
               <img
                 className='tick-img'
-                src={props.type === 'normal' ? TickWhite : WhiteDash}
-              />
+                src=""
+                alt='na' />
             </div>
           </span>
         </>}

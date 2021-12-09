@@ -7,12 +7,9 @@ import { useState } from "react";
 export const FormContainer = styled.div`
   border-radius: 7px;
   width: 300px;
-  /* position: absolute; */
   background-color: white;
   padding: 20px 20px 20px 20px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
-  /* margin-bottom: 50px; */
-  /* margin-left: 50%; */
 
   position: absolute;
   top: calc(100% + 5px);
@@ -59,7 +56,7 @@ const Form: React.FC<IFormProps> = (props) => {
                 onChange={(d) => {
                     console.log(d);
                     setType(d as string | null);
-                }} //d is the parameter which can be anything from the select options
+                }}
             />
             <textarea
                 placeholder="Type here (Max. 140 characters)"

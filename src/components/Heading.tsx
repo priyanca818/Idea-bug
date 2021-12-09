@@ -7,7 +7,6 @@ export interface HeadingProps {
 
   heading?: React.ReactNode;
   subheading?: React.ReactNode;
-
   headingFontSize?: number;
   padding?: string;
   styles?: {};
@@ -27,7 +26,7 @@ export const Heading: FC<HeadingProps> = ({
   return (
     <Container padding={padding} style={styles}>
       <LeftBox fd={!!subheading}>
-        {!!heading && <H style={{...headingStyles}} headingFontSize={headingFontSize}>{heading}</H>}
+        {!!heading && <H style={{ ...headingStyles }} headingFontSize={headingFontSize}>{heading}</H>}
         {!!subheading && <Subheading>{subheading}</Subheading>}
         {left?.map((node, index) => {
           return <Fragment key={index}>{node}</Fragment>;
@@ -71,12 +70,10 @@ const LeftBox = styled.div<{ fd: boolean }>`
     css`
       align-items: flex-start;
       flex-direction: column;
-      /* justify-content: space-between; */
     `}
 `;
 const RightBox = styled.div`
   display: flex;
-  /* align-items: center; */
 
   & > * {
     margin-left: 10px;
