@@ -1,6 +1,6 @@
 ## ABOUT:
 
-This repo is A UI based responsive static standalone replicated version of Feedback section of DemandHelm application, which contains a responsive chart, table, pop up form with textarea box and a select option, a basic header
+This repo is A UI based responsive static standalone replicated version of Feedback section of DemandHelm application, which contains a responsive stacked bar chart, table, pop up form with textarea box and a select option, a basic header
 
 ## Requirements to run:
 
