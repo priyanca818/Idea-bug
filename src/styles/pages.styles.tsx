@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { DivMixin, DivProps } from './components/Div';
+import { DivMixin, DivProps } from '../components/Div';
 
 export const ReSizeWidth = (width: number) => css`
   @media screen and (min-width: 1440px) {

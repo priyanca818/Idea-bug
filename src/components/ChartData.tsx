@@ -1,4 +1,4 @@
- const ChartData = [
+const ChartData = [
     {
         name: "3 Nov",
         bug: 2,
@@ -161,7 +161,7 @@
         idea: 2,
         amt: 2100
     },
-    
+
     {
         name: "1 Dec",
         bug: 1,
