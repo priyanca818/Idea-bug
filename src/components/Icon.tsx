@@ -1,17 +1,18 @@
+
 import React from 'react';
 import styled from 'styled-components';
-/* 
 
-import country from '../../assets/svg/country.svg'; */
+import horn from '../assets/svg/advertising-637082.svg';
+import country from '../assets/svg/country.svg';
 
 import chevron_right from '../assets/svg/old_icons/chevron_right.svg';
-/* import expand_less from '../../../assets/svg/old_icons/expand_less.svg';
-import expand_more from '../../../assets/svg/old_icons/expand_more.svg'; */
+import expand_less from '../assets/svg/old_icons/expand_less.svg';
+import expand_more from '../assets/svg/old_icons/expand_more.svg';
 
 const icons = {
-
-/*   country, */
-  arrow_back_has_prev : '/assets/svg/arrow-left-222222.svg',
+  horn,
+  country,
+  arrow_back_has_prev: '/assets/svg/arrow-left-222222.svg',
   arrow_back: '/assets/svg/arrow-left-ACB5C2.svg',
   arrow_forward_has_next: '/assets/svg/arrow-right-222222.svg',
   arrow_forward: '/assets/svg/arrow-right-ACB5C2.svg',
@@ -20,8 +21,8 @@ const icons = {
   chevron_left: '/assets/svg/old_icons/chevron_left.svg',
   chevron_right,
   close: '/assets/svg/old_icons/close.svg',
-/*   expand_less,
-  expand_more, */
+  expand_less,
+  expand_more,
   export: '/assets/svg/old_icons/export.svg',
   filter: '/assets/svg/old_icons/filter.svg',
 };
@@ -58,8 +59,8 @@ interface IconProps {
   color: TColor;
   width?: string;
   height?: string;
-  hasPrev? : boolean;
-  hasNext? : boolean;
+  hasPrev?: boolean;
+  hasNext?: boolean;
 }
 
 

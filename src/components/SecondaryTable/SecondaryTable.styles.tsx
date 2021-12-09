@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import vars from '../../styles/vars';
 
 export const SecondaryTable__Container = styled.div<{
@@ -11,10 +10,9 @@ export const SecondaryTable__Container = styled.div<{
   border-radius: 7px;
   background-color: #ffffff;
 
-
 background-color: red;
 
-   display: flex;
+  display: flex;
   flex-direction: column;
   width: ${(props) => (props.width ? props.width : '100%')};
   height: ${(props) => (props.height ? props.height : '100%')}; 
@@ -23,9 +21,6 @@ background-color: red;
 
 export const SecondaryTable__Header = styled.div`
   margin: 0;
-  /* padding: 0; */
-  /* height: 44px; */
-  /* padding: 10px; */
   padding: 14px 16px 13px 16px;
   display: flex;
   border-bottom: 0.5px solid ${vars.colors.grey4};
@@ -37,7 +32,6 @@ export const SecondaryTable__HeadingWrapper = styled.div`
   margin-right:50px;
   height: 43px;
   display: flex;
-  /* padding: 14px 16px 13px 16px; */
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0px 1px 6px #dae0e9;
@@ -55,7 +49,6 @@ export const SecondaryTable__Heading = styled.div`
 
 export const SecondaryTable__SubHeading = styled.div`
   color: ${vars.colors.grey3};
-  /* margin: 10px 0 0 0; */
   padding: 0;
   font-size: 12px;
   font-family: Open Sans, sans-serif;
@@ -64,7 +57,6 @@ export const SecondaryTable__SubHeading = styled.div`
 `;
 
 export const SecondaryTable__TableWrapper = styled.div`
-  /* Table Wrapper */
   padding: 0;
   height: 100%;
   overflow: auto;
@@ -75,11 +67,11 @@ export const SecondaryTable__TableWrapper = styled.div`
     width: 16px;
   }
 
-  /* background of the scrollbar except button or resizer */
+
   &::-webkit-scrollbar-track {
     background-color: #fff;
   }
-  /* scrollbar itself */
+
   &::-webkit-scrollbar-thumb {
     background-color: #babac0;
     border-radius: 16px;

@@ -42,10 +42,6 @@ export const The1440Window = styled.div<DivProps>`
     min-width: 1440px;
   }
 
-  /* @media screen and (min-width: 1920px) {
-    max-width: 1847px;
-    min-width: 1847px;
-  } */
 
   ${DivMixin}
 `;
@@ -82,14 +78,5 @@ export const ProdV2Container = styled.div<IProdV2ContainerProps>`
 
 export const CenterPage = styled.div<DivProps>`
   margin: 25px 20px 50px 72px;
-
-  /* @media screen and (min-width: 1440px) {
-    margin: 25px 20px 50px 72px;
-  } */
-
-  /* @media screen and (min-width: 1920px) {
-    margin: 25px 20px 50px 72px;
-  } */
-
   ${DivMixin}
 `;

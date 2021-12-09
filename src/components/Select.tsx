@@ -1,16 +1,13 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import _ from 'lodash';
 import React, { useEffect, useRef, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-
 import WhiteLock from '../assets/svg/lock-FFFFFF.svg';
 import tick from '../assets/svg/tick-0295F6.svg';
 import vars from '../styles/vars';
 import Button, { themes } from '../components/Buttons';
 import Icon, { TColor, TIcon } from '../components/Icon';
-/* import Tooltip, { ITooltipProps } from '../Tooltip'; */
+
 
 export interface SelectProps {
   value: string | number | null;
@@ -92,42 +89,6 @@ const Select: React.FC<SelectProps> = ({
   wrapperStyles,
   lockTooltipContent,
   showTooltipOnLock = true,
-  /*   tooltipProps = {
-      content: (
-        <>
-          {!!lockTooltipContent
-            ? lockTooltipContent
-            : 'Please upgrade to a higher plan.'}
-          <br />
-          <Button
-            theme={themes.text}
-            text='UPGRADE'
-            onClick={() => history.push('/subscription/plans')}
-            styles={{ marginTop: '6px' }}
-          />
-        </>
-      ),
-      maxWidth: '210px',
-      height: 72,
-      arrowDirection: 'bottom',
-      arrowPositionX: 'calc(100% - 35px)',
-      arrowPositionY: '10px',
-      containerPositionX: 'calc(100% - 200px)',
-      containerPositionY: '20px',
-      contentStyles: {
-        color: '#FFFFFF',
-        fontFamily: 'Nunito',
-        fontSize: '13px',
-        letterSpacing: '0.1px',
-        lineHeight: '18px',
-        fontWeight: 100,
-        textAlign: 'initial',
-        zIndex: 5,
-      },
-      style: {
-        marginLeft: 'auto',
-      },
-    }, */
 }) => {
   /*   const history = useHistory(); */
   const [dropdownShow, setDropdownShow] = useState(false);
@@ -615,21 +576,12 @@ const SelectDropdown = styled.div<{
     width: 0px;
   } 
 
-  /* background of the scrollbar except button or resizer */
   &::-webkit-scrollbar-track {
     background-color: #f4f4f4;
     width: 0px;
     height:0px;
   }
 
-  /* scrollbar itself */
-/*   &::-webkit-scrollbar-thumb {
-    background-color: #a0a0a5;
-    border: 0px solid #f4f4f4;
-    border-radius: 16px;
-  } */
-
-  /* set button(top and bottom of the scrollbar) */
   &::-webkit-scrollbar-button {
     display: none;
   }

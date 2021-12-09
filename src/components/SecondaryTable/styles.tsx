@@ -54,7 +54,7 @@ export const SecondaryTable__SubHeading = styled.div`
   color: ${vars.colors.grey3};
   /* margin: 10px 0 0 0; */
   padding: 0;
-  font-size: 12px;
+  font-size: 13px;
   font-family: Open Sans, sans-serif;
   line-height: 17px;
   letter-spacing: -0.1px;
@@ -102,23 +102,39 @@ export const SecondaryTable__Tr = styled.tr`
   margin: 0;
   padding: 0;
   font-family: Open Sans, sans-serif;
+  :hover{
+    background-color: #eef0f1;
+    transition: background-color 200ms ease 0s;
+  }
 `;
 
 export const SecondaryTable__Td = styled.td`
   /* Table Data */
   margin: 0;
-  padding: 0;
-  font-size: 12px;
+  padding: 5px;
+  font-size: 13px;
   font-family: Open Sans, sans-serif;
   line-height: 17px;
-  padding-left: 15px;
+  padding-left: 17px;
   border-bottom: 0.5px solid ${vars.colors.grey4};
   letter-spacing: -0.1px;
-
   &:last-child {
     /* text-align    : right; */
-    padding-right: 15px;
-  }
+    padding-right: 17px;
+  };
+
+  &:first-child {
+    /* text-align    : right; */
+    padding-left:15px;
+    padding-right:10px;
+  
+  };
+
+
+
+
+
+  
 `;
 
 export const SecondaryTable__Th = styled.th`
@@ -136,6 +152,11 @@ export const SecondaryTable__Th = styled.th`
 
   &:last-child {
     padding-right: 15px;
+  }
+
+  &:first-child {
+    padding-right: 15px;
+    width:70px;
   }
 `;
 
