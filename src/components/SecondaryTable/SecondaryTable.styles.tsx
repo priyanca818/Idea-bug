@@ -9,7 +9,7 @@ export const SecondaryTable__Container = styled.div<{
   padding: 0;
   border-radius: 7px;
   background-color: #ffffff;
-
+  font-weight: 400;
 background-color: red;
 
   display: flex;
@@ -108,7 +108,7 @@ export const SecondaryTable__Td = styled.td`
   padding-left: 15px;
   border-bottom: 0.5px solid ${vars.colors.grey4};
   letter-spacing: -0.1px;
-
+  font-weight: 400;
   &:last-child {
     /* text-align    : right; */
     padding-right: 15px;
