@@ -8,12 +8,18 @@ Node.Js, React.Js, IDE (VSCode)
 
 ## TO RUN IN DEVELOPMENT MODE:
 
-Download/clone the repository
-Open the downloaded archive, extract it
-right click inside the folder and "Open VSCode"
+Download/clone the repository.
+
+Open the downloaded archive, extract it.
+
+right click inside the folder and "Open VSCode".
+
 In a new terminal:
+
 run `npm i` to install all dependencies from package.json
+
 run `npm start` to start the application
+
 to compare pre-installed packages (if any) and their versions, run `npm list --depth=0`
 
 ## Available Scripts
